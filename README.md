@@ -4,4 +4,4 @@ This project's goal was to create a password generator that asked the user for l
 
 https://wwshehan.github.io/03-JavaScript-Password-Generator/
 
-(/Screenshots/screenshot.jpg?raw=true "Screenshot")
+![Screenshot of site](/Screenshots/Screenshot.jpg?raw=true "Screenshot")
