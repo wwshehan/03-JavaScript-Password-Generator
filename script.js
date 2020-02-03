@@ -6,7 +6,7 @@ var isCharTypeLower = "false";
 var isCharTypeSpecial = "false";
 var newPassword = [];
 var generateBtn = document.querySelector("#generate");
-var displayPasswordEl = document.querySelector("#displayPassword");
+var displayPasswordEl = document.querySelector("#password");
 
 const typeLowerCaseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 const typeUpperCaseLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -48,8 +48,8 @@ function writePassword() {
     if (choicesArray.length < typeNumbers.length || getLength < 8) {
         alert("The options you selected will not generate a password")
     } else {
-    for (i = 0; i < getLength; i++) {
-        newPassword += choicesArray[Math.floor(Math.random() * (choicesArray.length - 1))];
+        for (i = 0; i < getLength; i++) {
+            newPassword += choicesArray[Math.floor(Math.random() * (choicesArray.length - 1))];
         }
         displayPasswordEl.textContent = newPassword;
     };
